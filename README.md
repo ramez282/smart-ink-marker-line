@@ -4,6 +4,7 @@
 
 The **Smart Ink Marker Manufacturing Production Line Simulator** is an Applied Mechatronics project that simulates an automated production line for assembling ink markers. The system includes a Python FastAPI backend, a modern React HMI dashboard, InfluxDB time-series storage, Grafana visualization, Docker Compose deployment, quality control logic, SCADA-style event logging, and simple CMMS-style maintenance recommendations.
 
+
 The project is designed to be professional enough for a university submission while remaining simple enough to explain clearly during a viva.
 
 ## Assignment Requirement Mapping
@@ -267,10 +268,10 @@ The student should be able to explain:
 
 | Field | Details |
 | --- | --- |
-| Student Name | _Add name here_ |
-| Student ID | _Add ID here_ |
-| Course | _Add course name here_ |
+| Student Name | Ramez ismail |
+| Student ID | 100007500 |
+| Course | Programming 2 |
 | Module | Applied Mechatronics |
-| Instructor | _Add instructor name here_ |
-| University | _Add university name here_ |
-| Submission Date | _Add date here_ |
+| Instructor | Esteban Pozo |
+| University | Srh university |
+| Submission Date | 20 june 2026 |
