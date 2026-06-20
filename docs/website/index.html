@@ -119,29 +119,43 @@
           <p class="eyebrow">Evidence</p>
           <h2>Screenshots</h2>
         </div>
-        <div class="screenshot-grid">
-          <figure class="evidence-card">
-            <img src="../assets/screenshots/hmi-running.png" alt="Manufacturing HMI dashboard showing the RUNNING machine state" loading="lazy" />
-            <figcaption>HMI dashboard showing RUNNING state</figcaption>
-          </figure>
-          <figure class="evidence-card">
-            <img src="../assets/screenshots/quality-control.png" alt="Quality control panel showing defect reasons and failed products" loading="lazy" />
-            <figcaption>Defective product reason and quality control</figcaption>
-          </figure>
-          <figure class="evidence-card">
-            <img src="../assets/screenshots/recent-products.png" alt="Recent products table showing PASS and FAIL inspection results" loading="lazy" />
-            <figcaption>Recent products PASS/FAIL table</figcaption>
-          </figure>
-          <figure class="evidence-card">
-            <img src="../assets/screenshots/swagger-api.png" alt="Swagger API documentation for the Smart Ink Marker Production Line" loading="lazy" />
-            <figcaption>Swagger API documentation</figcaption>
-          </figure>
-          <article class="evidence-card evidence-note">
-            <p>InfluxDB and Grafana services included in docker-compose.yml</p>
-          </article>
-          <article class="evidence-card evidence-note">
-            <p>Docker Compose configuration included in repository</p>
-          </article>
+        <div class="screenshot-carousel" data-carousel aria-label="Project evidence screenshot carousel">
+          <div class="carousel-viewport">
+            <figure class="carousel-slide is-active">
+              <img src="../assets/screenshots/hmi-running.png" alt="Manufacturing HMI dashboard showing the RUNNING machine state" loading="lazy" />
+              <figcaption>HMI dashboard showing RUNNING state</figcaption>
+            </figure>
+            <figure class="carousel-slide">
+              <img src="../assets/screenshots/quality-control.png" alt="Quality control panel showing defect reasons and failed products" loading="lazy" />
+              <figcaption>Defective product reason and quality control</figcaption>
+            </figure>
+            <figure class="carousel-slide">
+              <img src="../assets/screenshots/recent-products.png" alt="Recent products table showing PASS and FAIL inspection results" loading="lazy" />
+              <figcaption>Recent products PASS/FAIL table</figcaption>
+            </figure>
+            <figure class="carousel-slide">
+              <img src="../assets/screenshots/swagger-api.png" alt="Swagger API documentation for the Smart Ink Marker Production Line" loading="lazy" />
+              <figcaption>Swagger API documentation</figcaption>
+            </figure>
+            <figure class="carousel-slide evidence-slide">
+              <div class="evidence-message">InfluxDB and Grafana services are included in docker-compose.yml for production metrics.</div>
+              <figcaption>Grafana dashboard / InfluxDB metrics evidence</figcaption>
+            </figure>
+            <figure class="carousel-slide evidence-slide">
+              <div class="evidence-message">Docker Compose configuration packages backend, frontend, InfluxDB, and Grafana services.</div>
+              <figcaption>Docker Compose configuration evidence</figcaption>
+            </figure>
+          </div>
+          <button class="carousel-arrow carousel-prev" type="button" aria-label="Previous screenshot">&lsaquo;</button>
+          <button class="carousel-arrow carousel-next" type="button" aria-label="Next screenshot">&rsaquo;</button>
+          <div class="carousel-dots" aria-label="Screenshot slide indicators">
+            <button class="carousel-dot is-active" type="button" aria-label="Show slide 1"></button>
+            <button class="carousel-dot" type="button" aria-label="Show slide 2"></button>
+            <button class="carousel-dot" type="button" aria-label="Show slide 3"></button>
+            <button class="carousel-dot" type="button" aria-label="Show slide 4"></button>
+            <button class="carousel-dot" type="button" aria-label="Show slide 5"></button>
+            <button class="carousel-dot" type="button" aria-label="Show slide 6"></button>
+          </div>
         </div>
       </section>
 
