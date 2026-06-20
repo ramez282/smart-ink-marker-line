@@ -267,10 +267,10 @@ The student should be able to explain:
 
 | Field | Details |
 | --- | --- |
-| Student Name | _Add name here_ |
-| Student ID | _Add ID here_ |
-| Course | _Add course name here_ |
+| Student Name | Ramez ismail |
+| Student ID | 100007500 |
+| Course | Programming 2 |
 | Module | Applied Mechatronics |
-| Instructor | _Add instructor name here_ |
-| University | _Add university name here_ |
-| Submission Date | _Add date here_ |
+| Instructor | Esteban Pozo |
+| University | Srh university |
+| Submission Date | 20 june 2026 |
