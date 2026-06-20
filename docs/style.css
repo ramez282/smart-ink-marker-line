@@ -227,16 +227,43 @@ a {
 }
 
 .evidence-card {
-  min-height: 210px;
-  display: grid;
-  place-items: center;
-  padding: 18px;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin: 0;
   color: #68778b;
   font-weight: 900;
-  text-align: center;
+  text-align: left;
+}
+
+.evidence-card img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  display: block;
+  border-bottom: 1px solid #dce4ef;
+  background: #101b29;
+  object-fit: contain;
+}
+
+.evidence-card figcaption,
+.evidence-card p {
+  margin: 0;
+  padding: 16px 18px 18px;
+  color: #3b4a5e;
+  line-height: 1.45;
+}
+
+.evidence-note {
+  min-height: 250px;
+  justify-content: center;
   background:
     linear-gradient(135deg, rgba(63, 191, 147, 0.08), rgba(20, 32, 51, 0.06)),
     #ffffff;
+}
+
+.evidence-note p {
+  text-align: center;
 }
 
 .details {
