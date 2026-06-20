@@ -1,0 +1,11 @@
+apiVersion: 1
+
+providers:
+  - name: Smart Ink Dashboards
+    orgId: 1
+    folder: Applied Mechatronics
+    type: file
+    disableDeletion: false
+    editable: true
+    options:
+      path: /var/lib/grafana/dashboards

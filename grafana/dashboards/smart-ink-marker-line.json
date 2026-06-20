@@ -1,0 +1,90 @@
+{
+  "annotations": {
+    "list": []
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "id": null,
+  "links": [],
+  "liveNow": false,
+  "panels": [
+    {
+      "datasource": { "type": "influxdb", "uid": "smart-ink-influxdb" },
+      "fieldConfig": { "defaults": { "unit": "celsius" }, "overrides": [] },
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 0 },
+      "id": 1,
+      "targets": [
+        {
+          "query": "from(bucket: \"production_line\")\n  |> range(start: -30m)\n  |> filter(fn: (r) => r._measurement == \"production_metrics\")\n  |> filter(fn: (r) => r._field == \"machine_temperature\")"
+        }
+      ],
+      "title": "Line Temperature",
+      "type": "timeseries"
+    },
+    {
+      "datasource": { "type": "influxdb", "uid": "smart-ink-influxdb" },
+      "fieldConfig": { "defaults": { "unit": "short" }, "overrides": [] },
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 0 },
+      "id": 2,
+      "targets": [
+        {
+          "query": "from(bucket: \"production_line\")\n  |> range(start: -30m)\n  |> filter(fn: (r) => r._measurement == \"production_metrics\")\n  |> filter(fn: (r) => r._field == \"good_products\" or r._field == \"defective_products\")"
+        }
+      ],
+      "title": "Good Parts vs Defective Count",
+      "type": "timeseries"
+    },
+    {
+      "datasource": { "type": "influxdb", "uid": "smart-ink-influxdb" },
+      "fieldConfig": { "defaults": { "unit": "short" }, "overrides": [] },
+      "gridPos": { "h": 6, "w": 8, "x": 0, "y": 8 },
+      "id": 3,
+      "targets": [
+        {
+          "query": "from(bucket: \"production_line\")\n  |> range(start: -10m)\n  |> filter(fn: (r) => r._measurement == \"production_metrics\")\n  |> filter(fn: (r) => r._field == \"machine_state\")\n  |> last()"
+        }
+      ],
+      "title": "Machine State Numeric",
+      "type": "stat"
+    },
+    {
+      "datasource": { "type": "influxdb", "uid": "smart-ink-influxdb" },
+      "fieldConfig": { "defaults": { "unit": "short" }, "overrides": [] },
+      "gridPos": { "h": 6, "w": 8, "x": 8, "y": 8 },
+      "id": 4,
+      "targets": [
+        {
+          "query": "from(bucket: \"production_line\")\n  |> range(start: -10m)\n  |> filter(fn: (r) => r._measurement == \"production_metrics\")\n  |> filter(fn: (r) => r._field == \"good_products\")\n  |> last()"
+        }
+      ],
+      "title": "Latest Good Parts",
+      "type": "stat"
+    },
+    {
+      "datasource": { "type": "influxdb", "uid": "smart-ink-influxdb" },
+      "fieldConfig": { "defaults": { "unit": "short" }, "overrides": [] },
+      "gridPos": { "h": 6, "w": 8, "x": 16, "y": 8 },
+      "id": 5,
+      "targets": [
+        {
+          "query": "from(bucket: \"production_line\")\n  |> range(start: -10m)\n  |> filter(fn: (r) => r._measurement == \"production_metrics\")\n  |> filter(fn: (r) => r._field == \"defective_products\")\n  |> last()"
+        }
+      ],
+      "title": "Latest Defective Count",
+      "type": "stat"
+    }
+  ],
+  "refresh": "5s",
+  "schemaVersion": 39,
+  "style": "dark",
+  "tags": ["mechatronics", "production-line", "influxdb"],
+  "templating": { "list": [] },
+  "time": { "from": "now-30m", "to": "now" },
+  "timepicker": {},
+  "timezone": "browser",
+  "title": "Smart Ink Marker Production Line",
+  "uid": "smart-ink-marker-line",
+  "version": 1,
+  "weekStart": ""
+}

@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Ink Marker Production Line Simulator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <a href="#overview">Overview</a>
+        <a href="#features">Features</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#screenshots">Screenshots</a>
+      </nav>
+      <section class="hero" id="overview">
+        <p class="eyebrow">Applied Mechatronics Project</p>
+        <h1>Smart Ink Marker Manufacturing Production Line Simulator</h1>
+        <p class="hero-copy">
+          A full-stack industrial automation simulator for assembling ink markers with a Python FastAPI backend,
+          React HMI dashboard, InfluxDB metrics, Grafana visualization, and Docker Compose deployment.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#screenshots">View Project Evidence</a>
+          <a class="button secondary" href="#" aria-label="GitHub repository placeholder">GitHub Repository</a>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="section" id="features">
+        <div class="section-heading">
+          <p class="eyebrow">Core Capabilities</p>
+          <h2>Features</h2>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Industrial HMI</h3>
+            <p>Start, Stop, and Reset controls with live machine state, production stage, alarms, and metrics.</p>
+          </article>
+          <article class="card">
+            <h3>Quality Control</h3>
+            <p>Rule-based quality score with PASS/FAIL status and clear defect explanations.</p>
+          </article>
+          <article class="card">
+            <h3>SCADA-Style Events</h3>
+            <p>Simple event log for machine actions, quality failures, warnings, and maintenance signals.</p>
+          </article>
+          <article class="card">
+            <h3>Grafana Metrics</h3>
+            <p>InfluxDB stores production metrics that can be visualized in Grafana dashboards.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Stack</p>
+          <h2>Technology Stack</h2>
+        </div>
+        <div class="stack-list">
+          <span>Python</span>
+          <span>FastAPI</span>
+          <span>React</span>
+          <span>Vite</span>
+          <span>TypeScript</span>
+          <span>InfluxDB 2.x</span>
+          <span>Grafana</span>
+          <span>Docker Compose</span>
+        </div>
+      </section>
+
+      <section class="section" id="architecture">
+        <div class="section-heading">
+          <p class="eyebrow">System Design</p>
+          <h2>Architecture Overview</h2>
+        </div>
+        <div class="architecture">
+          <div class="architecture-node">React HMI</div>
+          <div class="architecture-link">REST API + WebSocket</div>
+          <div class="architecture-node">FastAPI Backend</div>
+          <div class="architecture-link">Metrics</div>
+          <div class="architecture-node">InfluxDB + Grafana</div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Manufacturing Flow</p>
+          <h2>Production Line Stages</h2>
+        </div>
+        <div class="stage-grid">
+          <article>
+            <span>01</span>
+            <h3>Tip Feeding</h3>
+            <p>Feeds and places the marker tip.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Ink Filling</h3>
+            <p>Fills the marker with a target volume of approximately 5.0 ml.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Body Assembly</h3>
+            <p>Checks alignment of the marker body components.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Cap Fitting + QC</h3>
+            <p>Checks cap force and makes the final PASS/FAIL decision.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="screenshots">
+        <div class="section-heading">
+          <p class="eyebrow">Evidence</p>
+          <h2>Screenshots</h2>
+        </div>
+        <div class="screenshot-grid">
+          <div class="placeholder">HMI dashboard screenshot placeholder</div>
+          <div class="placeholder">Quality Control screenshot placeholder</div>
+          <div class="placeholder">Grafana dashboard screenshot placeholder</div>
+          <div class="placeholder">Docker containers screenshot placeholder</div>
+        </div>
+      </section>
+
+      <section class="section details">
+        <div>
+          <p class="eyebrow">Repository</p>
+          <h2>GitHub Repository</h2>
+          <p>Add repository link here: <a href="#">https://github.com/username/smart-ink-marker-line</a></p>
+        </div>
+        <div>
+          <p class="eyebrow">Author</p>
+          <h2>Student Details</h2>
+          <p>Name: _Add student name_</p>
+          <p>Student ID: _Add student ID_</p>
+          <p>Course: _Add course/module details_</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Smart Ink Marker Manufacturing Production Line Simulator</p>
+      <button id="backToTop" type="button">Back to top</button>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
